@@ -1,0 +1,1159 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+/*şimdi burayı daha doğrusu welcome olan kısmı hizalayacağız*/
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    
+ 
+
+}
+
+
+body{
+   font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+.wrapper{
+    width:  1200px;
+    margin: 0 auto;
+}
+/* header-top starts */
+.header-top{
+    background-color: #F5F5F5;
+     height: 42px;
+}
+.header-top .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      height: 55px; /* yüksekliği örnek olarak veriyoruz */
+   
+
+}
+.header-top h3{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #666666; 
+
+}
+/* .header-top .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+} */
+.header-top .links,
+.header-top .links div {
+  display: flex;
+  align-items: center;
+} /*  bu kısmı chat ile yaptın çünkü almadı tamamını */
+
+.header-top .links div div {
+    /* display: flex; */
+    gap: 6px;
+    padding: 0 16px;
+    border-left: 1px solid #d9d9d9;
+
+}
+.header-top .links div div:nth-child(1){
+    border-left: none;
+}
+
+/* .header-top .links {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 3 kolon oluştur 
+    gap: 16px;
+}
+    */
+
+.header-top  .links div p{
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.header-top  .links div p span{
+    /* color: #222; */
+    font-weight: 600;
+}
+
+/* header-top ends */
+
+
+
+/* header-logo starts */
+/* .header-logo{
+    height: 90px;
+} */
+
+.header-logo .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     height: 90px; /*yüksekliği örnek olarak veriyoruz     */
+}
+
+.header-logo .logo{
+    display: flex;
+    gap: 16px;
+  
+}
+.header-logo .right{
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+.header-logo .right .search{
+    width: 507px;
+    height: 48px;
+    border-radius: 10px;
+    background: #F3F9FB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+.header-logo .right .search img{
+    cursor: pointer;
+
+}
+
+
+
+
+.header-logo .right .search input{
+    width: 85%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #666666;
+    background:transparent;
+    border: none;
+    outline: none;
+}
+
+.header-logo .right .search input::placeholder{
+     font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #666666;
+    
+}
+
+.header-logo .right .form,
+.header-logo .right .form div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+
+} 
+
+.header-logo .right .form div{
+    gap: 6px;
+
+
+}
+.header-logo .right .form div:first-child{
+    padding-right: 20px;
+    border-right: 1px solid #d9d9d9;
+
+
+}
+
+.header-logo .right .form div a{
+    font-size: 16ox;
+    color: #666666;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+/* header-logo ends * */
+
+/* header bottom top section starts */
+
+.header-bottom .top {
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    padding-top: 17px;
+    padding-bottom: 16px;
+}
+
+/* ✅ DEĞİŞİKLİK: Menü hizalama ve temel stil */
+.header-bottom .top ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; /* Kenar not: varsayılan madde işaretleri kaldırıldı */
+    margin: 0;
+    padding: 0;
+}
+
+.header-bottom .top ul li {
+    position: relative; /* ✅ EKLENDİ: Dropdown için gerekli */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 14px;
+    border-radius: 18px;
+    background: #F3F9FB;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px; /* ✅ EKLENDİ: Menü elemanları arası boşluk */
+}
+
+.header-bottom .top ul li:hover {
+    background-color: #008ECC;
+}
+
+.header-bottom .top ul li:hover a {
+    color: #FFFFFF;
+}
+
+.header-bottom .top ul li:hover div.img {
+    background-image: url('C:\Users\betul\Desktop\E-ticaret Sitesi-son hali daha ileri seviye\e-tıcaret\frontend\public\img\Arrow - Down.png');
+}
+
+/* ✅ DEĞİŞMEDİ: Yazı stili aynı kaldı */
+.header-bottom .top ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #222222;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+/* ✅ DEĞİŞMEDİ: Ok simgesi stilinde yol düzenlendi */
+.header-bottom .top ul li div.img {
+    width: 18px;
+    height: 18px;
+    background-image: url('C:\Users\betul\Desktop\E-ticaret Sitesi-son hali daha ileri seviye\e-tıcaret\frontend\public\img\Arrow - Down.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ✅ YENİ EKLENDİ: Dropdown menü */
+.header-bottom .top ul li ul.dropdown {
+    display: none; /* ✅ Başlangıçta gizli */
+    position: absolute;
+    top: 100%; /* ✅ Altına hizalanıyor */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+/* ✅ YENİ EKLENDİ: Hover ile dropdown göster */
+.header-bottom .top ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* ✅ YENİ EKLENDİ: Dropdown elemanlarının stilleri */
+.header-bottom .top ul li ul.dropdown li {
+    padding: 8px 20px;
+    white-space: nowrap;
+    background: none;
+    border-radius: 0;
+}
+
+/* ✅ YENİ EKLENDİ: Hover ile alt menü arka plan rengi */
+.header-bottom .top ul li ul.dropdown li:hover {
+    background-color: #008ECC;
+}
+
+.header-bottom .top ul li ul.dropdown li a {
+    color: #222;
+    font-weight: 400;
+}
+
+/* ✅ YENİ EKLENDİ: Alt menü hover yazı rengi */
+.header-bottom .top ul li ul.dropdown li:hover a {
+    color: white;
+}
+
+/* header bottom top section end */
+
+/* header bottom bottom section starts */
+.header-bottom .bottom{
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+.header-bottom .bottom  .swiper{
+    width: 1201px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide {
+    width: 1201px;
+    height:316px ;
+    margin: 0 auto;
+    background: #212844;
+    border-radius: 16px;
+    position: relative;
+    user-select: none;
+   
+}
+
+
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide .left{
+    margin-top: 40px;
+    margin-left: 90px;
+
+}
+
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide .left h3{
+    font-size: 30px; 
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFFFFF;
+  
+}
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide .left h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 63px;
+    color: #FFFFFF;
+}
+
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide .left p{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-bottom .bottom  .swiper .swiper-wrapper .swiper-slide img:last-child{
+    top: 24px;
+    right: 125px;
+    width: 268;
+}
+.header-bottom .bottom  .swiper  .btn{
+    width: 86px;
+    height: 86px;
+    background: #F3F9FB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+.header-bottom .bottom  .swiper  .swiper-btn-next{
+    /* background-image: url(img/header-bottom/Arrow\ -\ Right\ 3\(1\).png); */
+    top: 116px;
+    right: -39px;
+}
+
+.header-bottom .bottom  .swiper  .swiper-btn-prev{
+    /* background-image: url(img/header-bottom/Arrow\ -\ Left\ 3.png); */
+    top: 116px;
+    left: -39px;
+}
+
+.header-bottom .bottom  .swiper .swiper-pagination{
+   
+    position: absolute;
+    top: 269px;
+    left: -460px;
+    color: #FFFFFF;
+
+     
+ 
+}
+
+.header-bottom .bottom  .swiper .swiper-pagination-bullet{
+
+    background: #FFFFFF;
+    color: #FFFFFF;
+
+}
+.header-bottom .bottom  .swiper .swiper-pagination-bullet-active{
+    background: #FFFFFF;
+    width: 24px;
+    border-radius: 7px;
+
+}
+
+
+/* header bottom botoom section end */
+
+/* header bottom bottom section ends  */
+
+/* smart section starst */
+
+.section .smart{
+    margin-bottom: 120px;
+
+}
+
+.section .smart .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .smart .top h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.section .smart .top h3 span{
+    color: #008ECC;
+}
+
+.section .smart .top p{
+    /* display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222; */
+    
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    /* leading-trim: NONE; */
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #222222;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.section .smart .top p:hover{
+    letter-spacing: 1px;
+}
+.section .smart .smart-swiper{
+    position: relative;
+    height: 337px;
+    margin-top: 16px;
+}
+
+.section .smart .smart-item,
+.section .smart .smart-item .smart-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section .smart .smart-item .smart-slide{
+    margin-top: 40px;
+}
+.section .smart .smart-item .smart-slide{
+    gap: 16px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* eğer kutu sayısı çoksa, alt satıra geçsin */
+    justify-content: space-between; /* ortala */
+    gap: 16px; /* kutular arası boşluk */
+    width: 100%; /* ya da belirli bir genişlik */
+}
+
+.section .smart .smart-item .smart-slide .box{
+    width: 227px;
+    height: 395px;
+    border-radius: 16px;
+    border: 1px solid #EDEDED ;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.section .smart .smart-item .smart-slide .box:hover{
+    border: 1px solid #008ECC;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+
+}
+
+.section .smart .smart-item .smart-slide .box .box-top{
+    background: #F5F5F5;
+    height: 189px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.section .smart .smart-item .smart-slide .box .box-top p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 51px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #008ECC;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 11px;   
+}
+
+.section .smart .smart-item .smart-slide .box .box-bottom{
+    height: 106px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: #FFFFFF;
+    padding: 12px 12px 10px 12px;
+    padding-top: 10px;
+}
+
+.section .smart .smart-item .smart-slide .box .box-bottom h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #222222;
+     margin-bottom: 6px;
+  white-space: nowrap; /* Taşmayı engellemek için, sığmıyorsa taşma yapar */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Taşan yazıyı "..." yap */
+}
+
+.section .smart .smart-item .smart-slide .box .box-bottom p{
+     font-size: 16px;
+      margin-bottom: 6px;
+     align-items: baseline; /* Fiyatların hizalanması için */
+  flex-wrap: nowrap; /* Satır kaydırma olmasın */
+    display: flex;
+    align-items: center;
+    gap:10px;
+    /* margin: 10px 0;   */
+}
+
+.section .smart .smart-item .smart-slide .box .box-bottom p span{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    color: #222222;
+    text-decoration: line-through;
+}
+.section .smart .smart-item .smart-slide .box .box-bottom p .new-price{
+    font-weight: 700;
+    color: #000; /* Yeni fiyat koyu olsun */
+}
+.box-bottom p span:not(.new-price) {
+  text-decoration: line-through;
+  color: #888;
+} /*bu kısmı chat yazdı*/
+
+.section .smart .smart-item .smart-slide .box .box-bottom hr{
+    height: 1px;
+    width: 100%;
+    border: none;
+    background: #EDEDED;
+    margin: 6px 0;
+
+}
+
+.section .smart .smart-item .smart-slide .box .box-bottom .green-price{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #249B3E;
+    margin-top: 10px;
+}
+
+
+
+.section .smart .swipper-scrollbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    color: #EDEDED;
+}
+
+
+
+
+
+
+
+
+
+
+ /* smart section ends */
+
+/* <!-- categories-section starts --> */
+
+ .categori-bar .swiper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.categories-header {
+   max-width: 1200px;  /* Maksimum genişlik */
+  width: 90%;         /* Ekran küçüldükçe küçülsün */
+  margin: 0 auto;     /* Ortala yatayda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.categories-header h3 {
+  font-size: 24x;
+  line-height: 30px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.categories-header h3 span {
+  color: #008ECC;
+   border-bottom: 2px solid #007bff; 
+}
+
+.view-all {
+  font-size: 16px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.categories-list {
+  max-width: 1200px;  /* Maksimum genişlik */
+  width: 90%;         /* Ekran küçüldükçe küçülsün */
+  margin: 0 auto;     /* Ortala yatayda */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-item {
+  text-align: center;
+  width: 132px;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;  /* Geçiş efekti eklendi */
+}
+
+.image-wrapper img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.category-item p {
+  margin-top: 12px;
+  font-size: 12px;
+  color:  #222222;
+
+}
+
+.category-item:hover .image-wrapper {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Aktif kategori (seçili)
+.category-item.active .image-wrapper {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+} */
+
+/* <!-- categories-section ends --> */
+
+
+
+
+
+
+
+
+
+
+/* alt taraf kategori kısmı */
+.section-header {
+   max-width: 1200px;  /* Maksimum genişlik */
+  width: 90%;         /* Ekran küçüldükçe küçülsün */
+  margin: 0 auto;     /* Ortala yatayda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 120px;
+}
+
+.section-header h3 {
+  font-size: 24x;
+  line-height: 30px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.section-header h3 span {
+  color: #008ECC;
+   border-bottom: 2px solid #007bff; 
+}
+
+.view-all {
+  font-size: 16px;
+  color: #222222;
+  text-decoration: none;
+}
+
+
+
+.electronics-swiper {
+    width: 100%; /* veya daha geniş yap */
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.electronics-swiper .swiper-wrapper {
+    justify-content: flex-start;
+}
+
+.top-electronics-section .electronics-swiper {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top-electronics-section .electronics-swiper .swiper-wrapper .swiper-slide {
+    width: 360px !important;
+    height: 207px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    margin-bottom: 10px;
+    margin: 0 10px;
+    /* background: #000; */
+    /* width: auto; Swiper kendi ayarlar */
+    flex-shrink: 0;
+      position: relative; /* İçindeki absolute elemanlar için referans */
+    padding-top: 10px; /* Kutunun üst kısmında boşluk bırak */
+}
+
+/* Sol yazılar */
+.top-electronics-section .electronics-swiper .swiper-slide .left {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.top-electronics-section .electronics-swiper .swiper-slide .left .brand-label {
+    position: absolute;
+    top: 29px;     /* Üstten 10px boşluk */
+    left: 20px;    /* Soldan 10px boşluk */
+    font-family: 'HK Grotesk', sans-serif;
+    font-weight: 400;
+    font-style: normal; /* Regular yerine normal olmalı CSS'de */
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.1em; /* %10 spacing = 0.1em */
+    color: #FFFFFF;
+    background: transparent; /* istersen arka plan ekle */
+    z-index: 10; /* Üstte görünmesi için */
+}
+
+
+/* arka plan renkleri ayrı ayrı */
+.iphone-card{
+    background: #313131;
+
+}
+
+.realme-card{
+    background: #FFF3CC;
+
+}
+
+.xiaomi-card{
+    background: #FFECDF;
+
+}
+
+
+
+/* brand labellar için ayrı arka plan renkleri */
+.iphone-card .brand-label {
+  width: 99px;
+  height: 35px;
+  position: absolute;
+  top: 1641px;
+  left: 140px;
+  border-radius: 8px;
+  padding: 9px 20px;
+  gap: 10px;
+  background-color: #494949 !important; 
+  opacity: 1;
+  transform: rotate(0deg); /* angle yerine transform kullanılır */
+  color: white; /* Yazı rengini beyaz yaptım */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'HK Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/* Benzer şekilde diğerleri için: */
+
+.realme-card .brand-label {
+  width: 99px ;
+  height: 35px;
+  position: absolute;
+  top: 1641px;
+  left: 140px;
+  border-radius: 8px;
+  padding: 9px 20px;
+  gap: 10px;
+  background: #494949 !important;
+  opacity: 1;
+  transform: rotate(0deg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'HK Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+
+.realme-card .brand-label {
+  width: 99px;
+  height: 35px;
+  position: absolute;
+  top: 1641px;
+  left: 140px;
+  border-radius: 8px;
+  padding: 9px 20px;
+  gap: 10px;
+  background: #F6DE8D !important;
+  opacity: 1;
+  transform: rotate(0deg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'HK Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.xiaomi-card .brand-label {
+  width: 99px;
+  height: 35px;
+  position: absolute;
+  top: 1641px;
+  left: 140px;
+  border-radius: 8px;
+  padding: 9px 20px;
+  gap: 10px;
+  background: #FFD1B0 !important;
+  opacity: 1;
+  transform: rotate(0deg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'HK Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+
+
+/* labellar için ayrı arka plan renkleri bitti */
+
+
+
+
+.top-electronics-section .electronics-swiper .swiper-slide .left .brand-logo{
+    width: 62px;
+    height: 62px;
+    opacity: 1;
+    top: 75px;
+    left: 20px;
+    position: absolute;
+}
+
+
+.top-electronics-section .electronics-swiper .swiper-slide .left h4 {
+     top: 157px;     /* Üstten 10px boşluk */
+    left: 20px;    /* Soldan 10px boşluk */
+    font-family: 'HK Grotesk', sans-serif;
+    font-weight: 400;
+    font-style: normal; /* Regular yerine normal olmalı CSS'de */
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.1em; /* %10 spacing = 0.1em */
+    color: #FFFFFF;
+    background: transparent; /* istersen arka plan ekle */
+    z-index: 10; /* Üstte görünmesi için */
+    position: absolute;
+
+}
+
+
+/* Sağ kısım görsel */
+.top-electronics-section .electronics-swiper .swiper-slide .right {
+  position: relative; /* genel konteyner */
+  width: 300px; /* örnek genişlik */
+  height: 300px; /* örnek yükseklik */
+}
+
+/* Yuvarlak konteyneri */
+.top-electronics-section .electronics-swiper .swiper-slide .right .yuvarlak {
+  position: relative; /* kendi konteyneri */
+  width: 215px;
+  height: 189px;
+}
+
+/* Yuvarlak resmi */
+.top-electronics-section .electronics-swiper .swiper-slide .right .yuvarlak .background-circle {
+  position: relative;
+  top: -30px;
+  left: 114px;
+  width: 215px;
+  height: 189px;
+  z-index: 0;
+}
+
+/* Logo konteyneri */
+.top-electronics-section .electronics-swiper .swiper-slide .right .logo-ıphone {
+  position: relative; /* kendi konteyneri */
+  width: 210px;
+  height: 285px;
+}
+
+/* Yuvarlak resmi */
+.top-electronics-section .electronics-swiper .swiper-slide .right .logo-ıphone .product-image {
+  position: relative;
+  top: -210px;
+  left: 150px;
+  width: 200px;
+  height: 295px;
+  z-index: 0;
+}
+
+/* Slide 2 (Realme) h4 için stil */
+.swiper-slide.brand-card.realme-card .left h4 {
+  color: #222222;
+
+}
+
+/* Slide 3 (Xiaomi) h4 için stil */
+.swiper-slide.brand-card.xiaomi-card .left h4 {
+  color: #222222;
+
+}
+
+
+
+
+/* Navigation Buttons */
+/* .top-electronics-section .electronics-swiper .btn {
+    width: 86px;
+    height: 86px;
+    background: #F3F9FB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+} */
+
+
+/* Pagination */
+.top-electronics-section .electronics-swiper .swiper-pagination-bullet {
+    background: #FFFFFF;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.top-electronics-section .electronics-swiper .swiper-pagination-bullet:hover {
+    background: #892d2d;
+    cursor: pointer;
+}
+
+.top-electronics-section .electronics-swiper .swiper-pagination-bullet-active {
+    background: #462020;
+    width: 24px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+ .categori-bar .swiper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+/* alt taraf bitti */
+
+
+/* Günlük sebze meyve kategorisi başlangıcı */
+
+
+.daily-header {
+   max-width: 1200px;  /* Maksimum genişlik */
+  width: 90%;         /* Ekran küçüldükçe küçülsün */
+  margin: 0 auto;     /* Ortala yatayda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.daily-header h3 {
+  font-size: 24x;
+  line-height: 30px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.daily-header h3 span {
+  color: #008ECC;
+   border-bottom: 2px solid #007bff; 
+}
+
+.view-all {
+  font-size: 16px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.daily-list {
+      max-width: 1200px;  /* Maksimum genişlik */
+  width: 90%;         /* Ekran küçüldükçe küçülsün */
+  margin: 0 auto;     /* Ortala yatayda */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.daily-item {
+    text-align: center;
+  width: 132px;
+  cursor: pointer;
+   display: flex;
+  flex-direction: column;  /* İçindeki img ve p alt alta sıralansın */
+  align-items: center;     /* Ortala yatayda */
+
+  
+}
+
+.image-wrapper-daily {
+     width: 100%;      /* Kutu genişliği kendi containerına göre esnek */
+  aspect-ratio: 1 / 1;  /* Kare kutu (en-boy oranı) */
+  max-width: 100px; /* Maksimum genişlik */
+  margin: 0 auto;
+  background: transparent; /* kutu görünmez */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px; /* köşeler kare kalır */
+  overflow: hidden; /* taşma olmasın */
+  border: none;
+  box-shadow: none;
+  background: #F5F5F5; /* arka plan kutuya geldi */
+}
+
+.image-wrapper-daily img {
+   width: 80%;      /* Görsel kutuya tam otursun */
+  height: 80%;     /* Yükseklik kutu kadar */
+  object-fit: contain; /* Görsel taşmasın, orantılı küçülsün */
+}
+
+.daily-item p {
+  margin-top: 12px;
+  font-size: 12px;
+  color:  #222222;
+
+}
+
+.daily-item:hover .image-wrapper-daily {
+  /* border: 2px solid #007bff; */
+  box-shadow: 0 0 0 1px  #008ECC;
+}
+
+.daily-item .indirim-haberi {
+  width: 132px; /* Diğer kutularla aynı genişlik */
+  text-align: center;
+  cursor: default; /* İstersen fare işaretçisi değişebilir */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #222222; 
+  font-size: 15px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+
+/* Günlük sebze meyve kategorisi bitişi */
