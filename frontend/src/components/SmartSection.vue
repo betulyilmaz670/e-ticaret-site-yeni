@@ -23,7 +23,7 @@
                   <h4>Galaxy S22 Ultra</h4>
                   <p><span class="new-price">32999₺</span><span>74999₺</span></p>
                   <hr />
-                  <h3 class="green-price">Save - 32999₺</h3>
+                  <h3 class="green-price">İndirim - 32999₺</h3>
                 </div>
               </router-link>
 
@@ -36,7 +36,7 @@
                   <h4>Galaxy M13 (4GB | 64 GB )</h4>
                   <p><span class="new-price">10499₺</span><span>14999₺</span></p>
                   <hr />
-                  <h3 class="green-price">Save - 4500₺</h3>
+                  <h3 class="green-price">İndirim - 4500₺</h3>
                 </div>
               </router-link>
 
@@ -49,7 +49,7 @@
                   <h4>Galaxy M33 (4GB | 64 GB )</h4>
                   <p><span class="new-price">16999₺</span><span>24999₺</span></p>
                   <hr />
-                  <h3 class="green-price">Save - 8000₺</h3>
+                  <h3 class="green-price">İndirim - 8000₺</h3>
                 </div>
               </router-link>
 
@@ -62,7 +62,7 @@
                   <h4>Galaxy M53 (4GB | 64 GB )</h4>
                   <p><span class="new-price">31999₺</span><span>40999₺</span></p>
                   <hr />
-                  <h3 class="green-price">Save - 9000₺</h3>
+                  <h3 class="green-price">İndirim - 9000₺</h3>
                 </div>
               </router-link>
 
@@ -75,7 +75,7 @@
                   <h4>Galaxy S22 Ultra</h4>
                   <p><span class="new-price">67999₺</span><span>85999₺</span></p>
                   <hr />
-                  <h3 class="green-price">Save - 18000₺</h3>
+                  <h3 class="green-price">İndirim - 18000₺</h3>
                 </div>
               </router-link>
             </div>

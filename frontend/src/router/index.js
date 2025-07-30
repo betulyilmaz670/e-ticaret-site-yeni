@@ -3,7 +3,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeTemp from '@/views/HomeTemp.vue'
 import LoginPage from '@/views/LoginPage.vue'
-import CategoryPage from '@/views/CategoryPage.vue'  // 👈 bunu ekle
+// import CategoryPage from '@/views/CategoryPage.vue'  // 👈 bunu ekle
+import CartPage from '@/views/CartPage.vue' 
 
 
 
@@ -22,7 +23,9 @@ const routes = [
     path: "/category/:category+",
     name: "CategoryPage",
     component: () => import("@/views/CategoryPage.vue"),
-  }
+  },
+  
+  { path: '/cart', name: 'Cart', component: CartPage },  // 👈 burası önemli
  
 
 

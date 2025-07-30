@@ -1,8 +1,8 @@
 <template>
   <section class="daily-section">
     <div class="daily-header">
-      <h3>Daily <span>Essentials </span> </h3>
-      <p>View All <img src="img/Arrow - Down.png" alt="" /></p>
+      <h3>Günlük <span>İhtiyaçlar </span> </h3>
+      <!-- <p>View All <img src="img/Arrow - Down.png" alt="" /></p> -->
     </div>
 
     <div class="daily-list">
@@ -18,7 +18,7 @@
         </div>
         <p>{{ item.name }}</p>
         <div class="indirim-haberi">
-          <h4>UP to 50% OFF</h4>
+          <h4>%50 İNDİRİM </h4>
         </div>
       </div>
     </div>
@@ -32,12 +32,12 @@ export default {
     return {
       activeIndex: 0,
       dailyItems: [
-        { img: "img/categori-daily/daily-1.png", alt: "Daily Essentials", name: "Daily Essentials" },
-        { img: "img/categori-daily/daily-2.png", alt: "Vegitables", name: "Vegitables" },
-        { img: "img/categori-daily/daily-3.png", alt: "Fruits", name: "Fruits" },
-        { img: "img/categori-daily/daily-4.png", alt: "Strowberry", name: "Strowberry" },
+        { img: "img/categori-daily/daily-1.png", alt: "Daily Essentials", name: "Günlük İhtiyaçlar" },
+        { img: "img/categori-daily/daily-2.png", alt: "Vegitables", name: "Sebze" },
+        { img: "img/categori-daily/daily-3.png", alt: "Fruits", name: "Meyveler" },
+        { img: "img/categori-daily/daily-4.png", alt: "Strowberry", name: "Çilek" },
         { img: "img/categori-daily/daily-5.png", alt: "Mango", name: "Mango" },
-        { img: "img/categori-daily/daily-6.png", alt: "Cherry", name: "Cherry" },
+        { img: "img/categori-daily/daily-6.png", alt: "Cherry", name: "Kiraz" },
       ],
     };
   },

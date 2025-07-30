@@ -1,8 +1,8 @@
 <template>
   <section class="top-electronics-section">
     <div class="section-header">
-      <h3>Shop From <span>Top Categories</span></h3>
-      <p>View All <img src="/img/Arrow - Down.png" alt="Arrow"></p>
+      <h3>Alışveriş Yapın <span>En Popüler Kategorilerden </span></h3>
+      <!-- <p>View All <img src="/img/Arrow - Down.png" alt="Arrow"></p> -->
     </div>
 
     <div class="electronics-swiper swiper mySwiper">
@@ -15,7 +15,7 @@
             <div class="brand-logo">
               <img src="/img/categori-bar/ıphone simgesi.png" alt="iPhone Logo">
             </div>
-            <h4>UP TO 80% OFF</h4>
+            <h4>%80 e Kadar İndirim</h4>
           </div>
           <div class="right">
             <div class="yuvarlak">
@@ -34,7 +34,7 @@
             <div class="brand-logo">
               <img src="/img/categori-bar/realmi logo.png" alt="Realme Logo">
             </div>
-            <h4>UP TO 80% OFF</h4>
+             <h4>%80 e Kadar İndirim</h4>
           </div>
           <div class="right">
             <div class="yuvarlak">
@@ -53,7 +53,7 @@
             <div class="brand-logo">
               <img src="/img/categori-bar/xiam logo.png" alt="Xiaomi Logo">
             </div>
-            <h4>UP TO 80% OFF</h4>
+             <h4>%80 e Kadar İndirim</h4>
           </div>
           <div class="right">
             <div class="yuvarlak">

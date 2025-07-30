@@ -36,7 +36,10 @@
                     </div>
                     <div class="form">
                         <div><img src="/img/user.svg" alt=""><a href="#" @click.prevent="goToLogin">Giriş Yap/Kayıt Ol</a></div>
-                        <div><img src="/img/Buy.svg" alt=""><a href="">Cart</a></div>
+                        <div>
+                          <img src="/img/Buy.svg" alt="">
+                         <router-link to="/cart">Sepet</router-link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,6 +90,13 @@ export default {
   },
   mounted() {
     this.fetchUserData();  // Bileşen yüklendiğinde veri çek
-  }
+  },
+  
+  goToCart() {
+  this.$router.push('/cart')
+}
+
+ 
+
 }
 </script>

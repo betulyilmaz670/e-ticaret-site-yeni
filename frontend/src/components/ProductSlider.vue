@@ -7,72 +7,72 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                                <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                                <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                                <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                                <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                               <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                                <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                              <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="left">
-                                <h3>Best Deal Online on smart watches</h3>
-                                <h1>SMART WEARABLE.</h1>
-                                <p>UP to 80% OFF</p>
+                                <h3>Akıllı Saatlerde En İyi Fırsat</h3>
+                                <h1>AKILLI TAKILABİLİR</h1>
+                                <p>%80 e Kadar İndirim</p>
                             </div>
                             <img src="img/header-bottom/mask group.png" alt="">
                             <img src="img/header-bottom/watch.png" alt="">

@@ -43,7 +43,16 @@ export default {
       console.error('Veri çekme hatası:', error);
     });
 },
+
+ methods: {
+    updateProducts(newProducts) {
+      this.products = newProducts;
+      console.log('updateProducts ile güncellenen ürünler:', newProducts);
+    }
+  }
 }
+
+ 
 
 </script>
 

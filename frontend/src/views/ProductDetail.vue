@@ -21,6 +21,8 @@
       <p><strong>İndirim:</strong> {{ product.discount }}</p>
       <p><strong>Yeni Fiyat:</strong>{{ product.priceNew }} ₺</p>
       <p><strong>Eski Fiyat:</strong> <s>{{ product.priceOld }}₺</s></p>
+      <!-- Sepete Ekle Butonu -->
+      <button @click="addToCart">Sepete Ekle</button>
       
 
       <!-- Yıldız Değerlendirme -->
@@ -59,6 +61,8 @@
 
 <script>
 import axios from 'axios';
+import { useCartStore } from '@/stores/cart'
+
 
 export default {
   name: 'ProductDetail',
@@ -72,7 +76,9 @@ export default {
   },
   methods: {
    
-    async fetchProduct() {
+    async fetchProduct()
+    {
+      this.cart = useCartStore();  // store'u burada başlatıyoruz
   try {
     const productId = this.$route.params.id;
 const res = await axios.get(`http://localhost:3000/api/products/${productId}`);
@@ -92,10 +98,21 @@ const res = await axios.get(`http://localhost:3000/api/products/${productId}`);
     setRating(star) {
       this.rating = star;
     },
+    
+    
+    addToCart() {
+      this.cart.addToCart(this.product);
+      alert(`${this.product.name} sepete eklendi!`);
+    },
+
   },
   mounted() {
     this.fetchProduct();
   },
+
+   
+
+
 };
 </script>
 

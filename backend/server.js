@@ -111,3 +111,74 @@ app.get('/api/products/:id', async (req, res) => {
     res.status(500).json({ error: "Ürün alınırken hata oluştu" });
   }
 });
+
+
+const userSchema = new mongoose.Schema({
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+});
+
+const User = mongoose.model('User', userSchema);
+
+
+const bcrypt = require('bcrypt');
+
+app.post('/api/users/register', async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    // Gerekli alanları kontrol et
+    if (!email || !password) {
+      return res.status(400).json({ message: "Email ve şifre zorunludur." });
+    }
+
+    // Email zaten var mı kontrol et
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ message: "Bu email zaten kayıtlı." });
+    }
+
+    // Şifreyi hashle
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Yeni kullanıcı oluştur
+    const newUser = new User({
+      email,
+      password: hashedPassword,
+    });
+
+    await newUser.save();
+
+    res.status(201).json({ message: "Kullanıcı başarıyla kayıt oldu." });
+  } catch (error) {
+    console.error("Kayıt hatası:", error);
+    res.status(500).json({ message: "Kayıt sırasında hata oluştu." });
+  }
+});
+
+
+app.post('/api/users/login', async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    // Kullanıcıyı bul
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: "Kullanıcı bulunamadı." });
+    }
+
+    // Şifre kontrolü
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+    if (!isPasswordValid) {
+      return res.status(400).json({ message: "Şifre yanlış." });
+    }
+
+    // Başarılı giriş
+    res.json({ message: "Giriş başarılı.", email: user.email });
+  } catch (error) {
+    console.error("Giriş hatası:", error);
+    res.status(500).json({ message: "Giriş sırasında hata oluştu." });
+  }
+});
+
+

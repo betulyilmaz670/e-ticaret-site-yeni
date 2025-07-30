@@ -44,19 +44,72 @@ export default {
     }
   },
   methods: {
-    handleLogin() {
-      alert(`Giriş yapılıyor: ${this.loginEmail}`)
+    async handleLogin() {
+  try {
+    const response = await fetch('http://localhost:3000/api/users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.loginEmail,
+        password: this.loginPassword,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert('Giriş başarılı!');
+
+      // Burada token veya kullanıcı bilgilerini localStorage ya da Vuex'e kaydedebilirsin
+      localStorage.setItem('token', data.token);
+
+      // Anasayfaya yönlendir
+      this.$router.push('/anasayfa');  // /anasayfa senin anasayfa rotan olmalı
+    } else {
+      alert('Giriş başarısız: ' + data.message);
+    }
+  } catch (error) {
+    alert('Giriş sırasında hata: ' + error.message);
+      }
+  
     },
-    handleRegister() {
+    async handleRegister() {
       if (this.registerPassword !== this.registerPasswordConfirm) {
         alert('Şifreler eşleşmiyor!')
         return
       }
-      alert(`Kayıt yapılıyor: ${this.registerEmail}`)
+
+      try {
+        const response = await fetch('http://localhost:3000/api/users/register', {  // Backend adresin
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            username: this.registerEmail,  // Eğer username ayrıysa burayı değiştir
+            email: this.registerEmail,
+            password: this.registerPassword,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          alert('Kayıt başarılı! Giriş yapabilirsiniz.')
+          this.activeTab = 'login';  // Kayıttan sonra giriş sekmesine geçiş
+        } else {
+          alert('Kayıt başarısız: ' + data.message);
+        }
+      } catch (error) {
+        alert('Kayıt sırasında bir hata oluştu: ' + error.message);
+      }
     }
   }
 }
 </script>
+
 
 <style scoped>
 .auth-container {

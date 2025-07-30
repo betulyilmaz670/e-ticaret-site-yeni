@@ -21,7 +21,7 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model('Product', productSchema);
 
 const products = [
-  // TELEFONLAR (category: "elektronik", subCategory: "cep telefonları")
+  // TELEFONLAR (category: "elektronik", subCategory: "cep telefonları") //açıklamalar başta buraya eklendi sonrasında mongoDB den manuel olarak tamamen içeriği değiştirildi 
   { category: "elektronik", subCategory: "cep telefonları", brand: "Samsung", name: "Galaxy S22 Ultra", priceNew: "59413", priceOld: "59613", discount: "56%", save: 42000, image: "/img/smartsphones/image1.png", url: "/product/1" , description: "Samsung Galaxy S22 Ultra, 108 MP kamera, 5.000 mAh batarya ve S Pen desteğiyle üst düzey bir akıllı telefondur." },
   { category: "elektronik", subCategory: "cep telefonları", brand: "Samsung", name: "Galaxy M13 (4GB | 64 GB)", priceNew: "10695", priceOld: "--", discount: "--", save: 4500, image: "/img/smartsphones/image2.png", url: "/product/2" , description: "Bu model, 7.0 inç büyüklüğünde FHD+ LCD ekrana ve 60 Hz yenileme hızına sahip olup, 64 GB dahili hafıza ve 4 GB RAM kapasitesi sunar. 5000 mAh bataryası 10-20 W şarj desteği ile Type-C girişi üzerinden şarj edilebilir. 20 MP üzeri çözünürlüğe sahip arka kamerası flaş destekliyken, ön kamerası 14-20 MP arasında çözünürlüğe sahiptir fakat ön kamera flaşı bulunmamaktadır. 4.5G mobil bağlantı hızına sahip olan cihazda yüz tanıma, suya/toza dayanıklılık özellikleri yer almamaktadır. Samsung Türkiye garantisiyle sunulmaktadır."},
   { category: "elektronik", subCategory: "cep telefonları", brand: "Samsung", name: "Galaxy M33 (4GB | 64 GB)", priceNew: "15499", priceOld: "--", discount: "--", save: 8000, image: "/img/smartsphones/image3.png", url: "/product/3" ,  description: "4 - 4.5 inç büyüklüğünde LCD ekranı HD+ çözünürlük sunan bu model, SD ekran teknolojisine sahiptir. Cihazda 128 GB dahili hafıza ve 6 GB RAM kapasitesi bulunur. 5000 mAh bataryası, 10-20 W şarj desteğiyle USB Type-C girişi üzerinden şarj edilebilir. 5 MP çözünürlüğünde ön ve arka kamera sunan cihazda ana kamera flaşı yer alırken, ön kamera flaşı bulunmamaktadır. Yüz tanıma ve suya/toza dayanıklılık özellikleri yoktur. 4.5G mobil bağlantı hızına sahiptir ve Resmi Distribütör garantisi ile sunulmaktadır."},
@@ -126,3 +126,18 @@ async function seedDB() {
 }
 
 seedDB();
+
+
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true },  
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+  // İstersen başka alanlar da ekleyebilirsin (örn: createdAt, role vb.)
+});
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;
+
