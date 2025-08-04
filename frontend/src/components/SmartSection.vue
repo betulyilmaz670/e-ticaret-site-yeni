@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="smart">
         <div class="top">
-          <h3>Grab the best deal on <span> Smartphones</span></h3>
+          <h3> Alışveriş Yapın <span> En İyi Akıllı Telefonlarda </span></h3>
           <p>View All <img src="/img/Arrow - Down.png" alt="" /></p>
         </div>
 
